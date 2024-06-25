@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex justify-center flex-col gap-4 text-white  items-center h-[44vh] px-5 md:px-0 text-xs md:text-base">
         <div className="font-bold text-xl md:text-4xl flex justify-center items-center gap-3">
           Buy me a coffee
-          <span><img width={44} src="/coffee.gif" alt="" /></span>
+          <span><Image width={44} src="/coffee.gif" alt="" /></span>
         </div>
         <p className="text-center md:text-left">
           A crowdfunding platform for creators. Get funded by your fans and followers.
@@ -26,17 +26,17 @@ export default function Home() {
         <h2 className="text-xl font-bold text-center my-6">Your Fans can buy you a coffee</h2>
         <div className="flex gap-5 justify-around">
           <div className="item space-y-3 flex flex-col items-center justify-center">
-            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/vlogger.gif" alt="" />
+            <Image className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/vlogger.gif" alt="" />
             <p className="font-bold text-center">Your Fans want to help</p>
             <p className="text-center">Your fans are awailable for you to help you</p>
           </div>
           <div className="item space-y-3 flex flex-col items-center justify-center">
-            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/dollar.gif" alt="" />
+            <Image className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/dollar.gif" alt="" />
             <p className="font-bold text-center">Your Fans want to help</p>
             <p className="text-center">Your fans are awailable for you to help you</p>
           </div>
           <div className="item space-y-3 flex flex-col items-center justify-center">
-            <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/team.gif" alt="" />
+            <Image className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/team.gif" alt="" />
             <p className="font-bold text-center">Your Fans want to help</p>
             <p className="text-center">Your fans are awailable for you to help you</p>
           </div>
