@@ -59,6 +59,8 @@ export const authoptions = NextAuth({
                         email: user.email,
                         // name: profile.name,
                         username: user.email.split('@')[0],
+                        // razorpay_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+                        // razorpay_secret: process.env.RAZORPAY_KEY_SECRET
                         // profilepic: profile.avatar_url,
                     })
                     // user.name = newUser.username

@@ -26,12 +26,12 @@ export const POST = async(req)=>{
 
     if(vp){
         // Update the payment status in the database
-        const updatePayment = await Payment.findOneAndUpdate({order_id: body.razorpay_order_id}, {status: 'success'}, {new: true});
-        return NextResponse.redirect(`${process.env.NEXT_PUBLIC_URL}/${updatePayment.to_user}?paymentdone=true`);
+        const updatedPayment = await Payment.findOneAndUpdate({order_id: body.razorpay_order_id}, {status: 'success'}, {new: true});
+        return NextResponse.redirect(`${process.env.NEXT_PUBLIC_URL}/${updatedPayment.to_user}?paymentdone=true`);
     }
 
     else {
-        return new Response('Payment verification failed', {status: 400}) // explicitly setting status code to 400
+        return NextResponse.error("Payment Verification Failed!")
     }
 
 }

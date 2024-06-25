@@ -64,25 +64,6 @@ const Dashboard = () => {
       <div className="flex justify-center my-4">
         <div className='flex flex-col gap-1 w-full md:w-[50%] px-4 md:px-0'>
           <h2 className='font-bold text-xl text-center'>Welcome to your Dashboard</h2>
-          {/* <form action={handleSubmit}>
-
-          <span>Name</span>
-          <input type='text' className='w-full p-2 rounded-lg bg-slate-800' value={form.name} onChange={(e) => setform({...form, name: e.target.value})} />
-          <span>Email</span>
-          <input type='email' className='w-full p-2 rounded-lg bg-slate-800' value={form.email} onChange={(e) => setform({...form, email: e.target.value})} />
-          <span>Username</span>
-          <input type='text' className='w-full p-2 rounded-lg bg-slate-800' value={form.username} onChange={(e) => setUsername(e.target.value)} />
-          <span>Profile Picture</span>
-          <input type='file' className='w-full p-2 rounded-lg bg-slate-800' onChange={(e) => setProfilePicture(e.target.files[0])} />
-          <span>Cover Picture</span>
-          <input type='file' className='w-full p-2 rounded-lg bg-slate-800' onChange={(e) => setCoverPicture(e.target.files[0])} />
-          <span>Raxorpay Credentials</span>
-          // input raxorpay id 
-          <input className='w-full p-2 rounded-lg bg-slate-800 my-1' placeholder='Enter Raxorpay key_Id' value={credentials.id} onChange={(e) => setCredentials({ ...credentials, id: e.target.value })} />
-          // input raxorpay secret
-          <input className='w-full p-2 rounded-lg bg-slate-800 my-1' placeholder='Enter Raxorpay key_secret' value={credentials.secret} onChange={(e) => setCredentials({ ...credentials, secret: e.target.value })} />
-          <button className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 my-2" onClick={handleSubmit}>Submit</button>
-        </form> */}
           <form action={handleSubmit} >
             <div className="my-2">
               <label htmlFor="name" className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'>Name</label>

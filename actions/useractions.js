@@ -9,20 +9,11 @@ dotenv.config();
 
 export const initiate = async (amount, to_user, paymentform) => {
     await connectDB();
-    let user = await User.findOne({username: to_user});
-    const secret = user.razorpay_secret;
-    const ra_id = user.razorpay_secret;
-    let instance = new Razorpay({ key_id: ra_id, key_secret: secret})
+    // let user = await User.findOne({username: to_user});
+    // const secret = user.razorpay_secret;
+    // const ra_id = user.razorpay_secret;
+    var instance = new Razorpay({ key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID, key_secret: process.env.RAZORPAY_KEY_SECRET})
 
-    // await instance.orders.create({
-    //     amount: 50000,
-    //     currency: "INR",
-    //     receipt: "receipt#1",
-    //     notes: {
-    //         key1: "value3",
-    //         key2: "value2"
-    //     }
-    // })
 
     if (!instance) {
         console.error('instance is not defined');
@@ -32,41 +23,6 @@ export const initiate = async (amount, to_user, paymentform) => {
         console.error('instance.orders is not defined')
     }
 
-
-    // let options = {
-    //     amount: Number.parseInt(amount),
-    //     currency: "INR",
-    // }
-
-    // let x;
-    // try {
-    //     console.log('Creating order with amount:', amount);
-    //     x = await instance.orders.create({
-    //         amount: Number.parseInt(amount),
-    //         currency: "INR",
-    //         receipt: "receipt#1",
-    //         notes: {
-    //             key1: "value3",
-    //             key2: "value2"
-    //         }
-    //    })
-    // } catch (error) {
-    //     console.error('Error creating order:', error);
-    //     // console.error('Instance:', instance);
-    //     // console.error('Orders:',instance?.orders);
-    // }
-
-    // console.log('Creating order with amount:', amount);
-
-    // let x = instance.orders.create({
-    //     amount: Number.parseInt(amount),
-    //     currency: "INR",
-    //     receipt: "receipt#1",
-    //     notes: {
-    //         key1: "value3",
-    //         key2: "value2"
-    //     }
-    // })
 
     let orderOptions = {
         amount: Number.parseInt(amount)*100,
@@ -100,7 +56,9 @@ export const initiate = async (amount, to_user, paymentform) => {
             to_user: to_user, 
             name: paymentform.name, 
             message: paymentform.message, 
-            order_id: order.id 
+            order_id: order.id,
+            razorpay_secret: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+            razorpay_id: process.env.RAZORPAY_KEY_SECRET
         });
         await newPayment.save();
         // console.log('Payment saved:',newPayment);

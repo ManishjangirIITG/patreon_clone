@@ -122,7 +122,7 @@ const PaymentPage = ({ username }) => {
 
             <div className='cover w-full relative'>
                 <img className='object-cover w-full h-[350]' src={currentUser.coverpic} alt="cover image" />
-                <div className='absolute flex justify-center w-full -bottom-[36%]'>
+                <div className='profile-pic absolute flex justify-center w-full bottom-0 transform: translate-y-1/2 z-1'>
                     <img className='rounded-xl' width={150} height={150} src={currentUser.profilepic} alt="profile image" />
                 </div>
             </div>

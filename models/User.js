@@ -26,11 +26,11 @@ const UserSchema = new Schema({
     },
     razorpay_id: {
         type: String,
-        required: true
+        // required: true
     },
     razorpay_secret: {
         type: String,
-        required: true
+        // required: true
     },
     createdAt: {
         type: Date,
