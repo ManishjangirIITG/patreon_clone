@@ -16,8 +16,8 @@ const Login = () => {
         }
     }, [])
 
+    const router = useRouter();
     if (session) {
-        const router = useRouter();
         router.push('/dashboard')
     }
 
