@@ -10,7 +10,6 @@ import Payment from '@/models/Payment';
 import connectDB from '@/db/connectDb';
 
 
-
 export const authoptions = NextAuth({
     providers: [
         // OAuth authentication providers...
@@ -88,5 +87,7 @@ export const authoptions = NextAuth({
     //     },
     // }
 });
+
+const handler = NextAuth(authoptions);
 
 export { authoptions as GET, authoptions as POST }
