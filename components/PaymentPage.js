@@ -122,9 +122,9 @@ const PaymentPage = ({ username }) => {
             <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
 
             <div className='cover w-full relative'>
-                <Image className='object-cover w-full h-[350]' src={currentUser.coverpic} alt="cover image" />
+                <img className='object-cover w-full h-[350]' src={currentUser.coverpic} alt="cover image" />
                 <div className='profile-pic absolute flex justify-center w-full bottom-0 transform: translate-y-1/2 z-1'>
-                    <Image className='rounded-xl' width={150} height={150} src={currentUser.profilepic} alt="profile image" />
+                    <img className='rounded-xl' width={150} height={150} src={currentUser.profilepic} alt="profile image" />
                 </div>
             </div>
 
@@ -147,7 +147,7 @@ const PaymentPage = ({ username }) => {
                             {payments.length == 0 && <li className='my-3'>No payments yet</li>}
                             {payments.map((p, i) => {
                                 return <li key={i} className='my-3 flex gap-2 items-center'>
-                                    <Image width={30} src="https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp&w=256" alt="user avatar" />
+                                    <img width={30} src="https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp&w=256" alt="user avatar" />
                                     <span>
                                         &quot;{p.name}&quot; donated <span className="font-bold">Rs {p.amount}</span> with a message &quot;{p.message}&quot;.
                                     </span>

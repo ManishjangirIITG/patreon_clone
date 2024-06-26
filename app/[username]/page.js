@@ -4,6 +4,15 @@ import { notFound } from "next/navigation"
 import connectDB from '@/db/connectDb'
 import User from '@/models/User'
 
+// Return a list of `params` to populate the [slug] dynamic segment
+// export async function generateStaticParams() {
+//     const posts = await fetch('https://.../posts').then((res) => res.json())
+   
+//     return posts.map((post) => ({
+//       slug: post.slug,
+//     }))
+// }
+
 const Username = async ({params}) => {
     await connectDB();
     let u = await User.findOne({username: params.username});
