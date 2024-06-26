@@ -6,18 +6,18 @@ import User from '@/models/User'
 import dynamic from 'next/dynamic'
 
 // Return a list of `params` to populate the [slug] dynamic segment
-export async function getStaticPaths() {
-    await connectDB();
-    const users = await User.find({}).select('username -_id');
+// export async function getStaticPaths() {
+//     await connectDB();
+//     const users = await User.find({}).select('username -_id');
 
-    const paths = users.map(user=>({
-        params: {username: user.username},
-    }));
-    return {
-        paths,
-        fallback: true,
-    }
-}
+//     const paths = users.map(user=>({
+//         params: {username: user.username},
+//     }));
+//     return {
+//         paths,
+//         fallback: true,
+//     }
+// }
 
 
 const PaymentPageWithNoSSR = dynamic(()=> import('@/components/PaymentPage'), {
@@ -35,6 +35,7 @@ const UsernamePage = async ({params}) => {
         return (
             <>
                 <PaymentPageWithNoSSR username={params.username} />
+                {/* <PaymentPage username={params.username} /> */}
             </>
         )
     // }
