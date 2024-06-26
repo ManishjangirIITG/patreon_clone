@@ -17,7 +17,7 @@ const Navbar = () => {
         <nav className='bg-gray-900 text-white flex justify-center md:justify-between px-4 py-2 md:h-16 items-center flex-col md:flex-row'>
 
             <Link className="logo font-bold text-xl flex justify-center items-center gap-2 my-2" href={"/"}>
-                <Image width={22} height={22} src="/coffee.gif" alt="" />
+                <Image unoptimized width={22} height={22} src="/coffee.gif" alt="" />
                 <span className='text-2xl'> Buy me a Coffee</span>
             </Link>
 
