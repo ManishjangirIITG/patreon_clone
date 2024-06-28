@@ -1,4 +1,4 @@
-![स्क्रीनशॉट 2024-06-28 133145](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/db7ffcc4-c58b-49e1-b4ea-df96d1c2deb2)# Patreon Clone
+# Patreon Clone
   A Patreon clone built with modern web technologies to allow creators to receive payments from their supporters. This project uses React for the front end, Express and Node.js for the back end, MongoDB for the database, and Next.js for server-side rendering. Authentication is handled by NextAuth, and payments are processed through Razorpay's UPI payment gateway.
   ## Table of Contents
 - [Features](#features)
