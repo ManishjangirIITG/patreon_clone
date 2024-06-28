@@ -77,11 +77,6 @@ const PaymentPage = ({ username }) => {
             "image": "https://example.com/your_logo",
             "order_id": order_Id,
             "callback_url": `https://patreon-clone-j4dekxnnd-manishjangiriitgs-projects.vercel.app/api/razorpay`,
-            // "prefill": {
-            //     "name": "Jarvis",
-            //     "email": "example@gmail.com",
-            //     "contact": "9999999999"
-            // },
             "notes": {
                 "address": "Razorpay Corporate Office"
             },
@@ -90,14 +85,9 @@ const PaymentPage = ({ username }) => {
             }
         }
 
-        // console.log(options);
-        // console.log(process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID);
-
-        // console.log(options);
         var rzp1 = new window.Razorpay(options);
 
         rzp1.open();
-        // e.preventDefault();
 
     }
 
