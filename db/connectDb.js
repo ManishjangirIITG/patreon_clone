@@ -16,7 +16,7 @@ const connectDB = async () =>{
             bufferCommands: false,
         };
 
-        cached.promise = mongoose.connect(`${process.env.MONGO_URI}`, opts).then((mongoose) => {
+        cached.promise = mongoose.connect(`mongodb+srv://manishjangir139:KQgseHHTxmwN0ExL@patreonclone.8syhxmp.mongodb.net/?retryWrites=true&w=majority&appName=patreonclone`, opts).then((mongoose) => {
             return mongoose;
         });
     }
