@@ -1,4 +1,4 @@
-# Patreon Clone
+![स्क्रीनशॉट 2024-06-28 133145](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/db7ffcc4-c58b-49e1-b4ea-df96d1c2deb2)# Patreon Clone
   A Patreon clone built with modern web technologies to allow creators to receive payments from their supporters. This project uses React for the front end, Express and Node.js for the back end, MongoDB for the database, and Next.js for server-side rendering. Authentication is handled by NextAuth, and payments are processed through Razorpay's UPI payment gateway.
   ## Table of Contents
 - [Features](#features)
@@ -6,6 +6,7 @@
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -28,7 +29,7 @@
 - **Styling:** CSS, styled-components
 - **API Testing:** Postman
 
-  ## Installation
+## Installation
 
 1. **Clone the repository:**
    ```sh
@@ -39,7 +40,7 @@
     ```sh
     npm install
 
-  ## Configuration
+## Configuration
       ```env
         MONGODB_URI=<your-mongodb-connection-string>
         NEXTAUTH_URL=http://localhost:3000
@@ -49,7 +50,7 @@
         NEXT_PUBLIC_RAZORPAY_KEY_ID=<your-razorpay-key-id>
 
 
-  ## Usage
+## Usage
 
   1. **Start theserver:**
       ```sh
@@ -59,7 +60,18 @@
      ```arduino
      http://localhost:3000
 
-  ## Contributing
+## Screenshots
+  ![स्क्रीनशॉट 2024-06-28 132855](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/82662003-4fc6-4ae0-a937-8525a1bf5dea)
+  ![स्क्रीनशॉट 2024-06-28 132921](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/b83ccd32-2dfe-4184-b898-19ae8829087e)
+  ![स्क्रीनशॉट 2024-06-28 132942](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/6fde5cbb-0fd5-4a4d-9a49-5a91d3b9f509)
+  ![स्क्रीनशॉट 2024-06-28 133008](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/24521685-6b1c-498f-89bc-9da12df3b947)
+  ![स्क्रीनशॉट 2024-06-28 133026](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/a00e9606-7088-4029-80af-c3d0e819fe3b)
+  ![स्क्रीनशॉट 2024-06-28 133104](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/07ba9454-1529-4f80-83e1-13f1bd92e3ef)
+  ![स्क्रीनशॉट 2024-06-28 133145](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/008e170a-761a-4f00-b0d6-ff016f82b7ae)
+  ![स्क्रीनशॉट 2024-06-28 133206](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/38f3dbcf-afcc-4aeb-994b-b011c3a575d4)
+  ![image](https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/df0ba05c-2654-40a7-aef3-d0740e664ab0)
+
+## Contributing
 
   1. **Fork the repository.**
   2. **Create a new branch:**
