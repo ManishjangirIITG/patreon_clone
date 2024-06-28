@@ -25,12 +25,12 @@ const PaymentPageWithNoSSR = dynamic(()=> import('@/components/PaymentPage'), {
 })
 
 const UsernamePage = async ({params}) => {
-    // await connectDB();
-    // let u = await User.findOne({username: params.username});
-    // if(!u){
-    //     return notFound();
-    // }
-    // else {
+    await connectDB();
+    let u = await User.findOne({username: params.username});
+    if(!u){
+        return notFound();
+    }
+    else {
 
         return (
             <>
@@ -38,7 +38,7 @@ const UsernamePage = async ({params}) => {
                 {/* <PaymentPage username={params.username} /> */}
             </>
         )
-    // }
+    }
 }
 
 export default UsernamePage
