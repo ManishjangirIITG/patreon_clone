@@ -76,7 +76,7 @@ const PaymentPage = ({ username }) => {
             "description": "Test transaction",
             "image": "https://example.com/your_logo",
             "order_id": order_Id,
-            "callback_url": `${process.env.NEXT_PUBLIC_URL}/api/razorpay`,
+            "callback_url": `https://patreon-clone-j4dekxnnd-manishjangiriitgs-projects.vercel.app/api/razorpay`,
             // "prefill": {
             //     "name": "Jarvis",
             //     "email": "example@gmail.com",

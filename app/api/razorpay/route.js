@@ -27,7 +27,7 @@ export const POST = async(req)=>{
     if(vp){
         // Update the payment status in the database
         const updatedPayment = await Payment.findOneAndUpdate({order_id: body.razorpay_order_id}, {status: 'success'}, {new: true});
-        return NextResponse.redirect(`${process.env.NEXT_PUBLIC_URL}/${updatedPayment.to_user}?paymentdone=true`);
+        return NextResponse.redirect(`https://patreon-clone-j4dekxnnd-manishjangiriitgs-projects.vercel.app/${updatedPayment.to_user}?paymentdone=true`);
     }
 
     else {
