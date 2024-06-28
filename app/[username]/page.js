@@ -20,9 +20,9 @@ import dynamic from 'next/dynamic'
 // }
 
 
-const PaymentPageWithNoSSR = dynamic(()=> import('@/components/PaymentPage'), {
-    ssr: false,
-})
+// const PaymentPageWithNoSSR = dynamic(()=> import('@/components/PaymentPage'), {
+//     ssr: false,
+// })
 
 const UsernamePage = async ({params}) => {
     await connectDB();
@@ -34,8 +34,8 @@ const UsernamePage = async ({params}) => {
 
         return (
             <>
-                <PaymentPageWithNoSSR username={params.username} />
-                {/* <PaymentPage username={params.username} /> */}
+                {/* <PaymentPageWithNoSSR username={params.username} /> */}
+                <PaymentPage username={params.username} />
             </>
         )
     }
