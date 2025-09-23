@@ -95,7 +95,7 @@ https://github.com/ManishjangirIITG/patreon_clone/assets/121192543/5a450c23-170c
   ## License
 
   This project is licensed under the MIT License.
-    ```sql
+  
       MIT License
       Permission is hereby granted, free of charge, to any person obtaining a copy
       of this software and associated documentation files (the "Software"), to deal
